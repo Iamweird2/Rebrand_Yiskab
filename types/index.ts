@@ -8,3 +8,8 @@ export interface NavItem {
 export interface RootLayoutProps {
   children: React.ReactNode
 }
+
+
+export interface MainNavProps {
+  items?: NavItem[]
+}
