@@ -7,7 +7,23 @@ export const siteConfig = {
   description: "Yis-kab DIstinctive Tech. Co. Nig. Ltd.",
   mainNav: [
     {
-      title: "Home",
+      title: "home",
+      href: "/",
+    },
+    {
+      title: "services",
+      href: "/",
+    },
+    {
+      title: "gallery",
+      href: "/",
+    },
+    {
+      title: "about",
+      href: "/",
+    },
+    {
+      title: "contact",
       href: "/",
     },
   ],
