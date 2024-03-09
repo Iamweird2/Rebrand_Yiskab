@@ -48,7 +48,7 @@ export function SiteHeader(props: ComponentPropsWithoutRef<"header">) {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
+                <Icons.twitter className="size-5 fill-current" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
