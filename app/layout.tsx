@@ -1,6 +1,7 @@
 import "@/styles/globals.css"
 import { RootLayoutProps } from "@/types"
 import { GeistSans } from "geist/font/sans"
+
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 

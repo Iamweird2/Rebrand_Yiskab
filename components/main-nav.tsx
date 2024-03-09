@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { MainNavProps } from "@/types"
+
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
@@ -9,12 +10,12 @@ export function MainNav({ items }: MainNavProps) {
     <div className="flex flex-1 gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
         <Icons.logo className="size-5" />
-        <span className="inline-block font-bold uppercase text-lg">
+        <span className="inline-block text-lg font-bold uppercase">
           {siteConfig.name}
         </span>
       </Link>
       {items?.length ? (
-        <nav className="hidden sm:flex gap-10 ml-auto px-10">
+        <nav className="ml-auto hidden gap-10 px-10 sm:flex">
           {items?.map(
             (item, index) =>
               item.href && (
@@ -22,7 +23,7 @@ export function MainNav({ items }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-lg uppercase font-bold text-muted",
+                    "flex items-center text-lg font-bold uppercase text-muted",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >

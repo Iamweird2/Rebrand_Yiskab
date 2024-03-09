@@ -1,5 +1,6 @@
 import { ComponentPropsWithoutRef } from "react"
 import Link from "next/link"
+
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
@@ -12,7 +13,7 @@ export function SiteHeader(props: ComponentPropsWithoutRef<"header">) {
   return (
     <header
       className={cn(
-        "bg-background sticky top-0 z-40 w-full border-b",
+        "sticky top-0 z-40 w-full border-b bg-background",
         className
       )}
       {...rest}
@@ -32,7 +33,7 @@ export function SiteHeader(props: ComponentPropsWithoutRef<"header">) {
                   variant: "ghost",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5" />
+                <Icons.gitHub className="size-5" />
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
